@@ -4,25 +4,37 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <header className="flex justify-center">
-            <div className="container w-full p-5">
-                <nav className="mx-auto flex items-center justify-between p-2 lg:px-8">
-                    <div className="justify-start">
-                        <a href="/" className="-m-1.5 p-1.5">
-                            <span>MSOC</span>
+        <header className="flex justify-center fixed w-full min-h-20 max-h-20">
+            <div className="container w-full pr-20 pl-20 flex justify-center pt-3">
+                <nav className="flex items-center justify-between p-2 lg:px-8 border-4 rounded-xl border-transparent bg-[#F9C791] w-full">
+                    <div className="justify-start max-w-[120px]">
+                        <a href="/" className="max-w-[120px]">
+                            <img src="../fac_1.png" alt="" className="object-cover" />
                         </a>
                     </div>
-                    <div className="hidden lg:flex flex-1 justify-center space-x-40">
-                        <Link to="/home" className="text-xl font-semibold leading-6 text-black">
+                    <div className="h-full mr-auto lg:flex justify-center">
+                        <Link
+                            to="/home"
+                            className="text-xl flex items-center justify-center font-semibold leading-6 text-black w-[125px]"
+                        >
                             Trang Chủ
                         </Link>
-                        <Link to="/info" className="text-xl font-semibold leading-6 text-black">
+                        <Link
+                            to="/info"
+                            className="text-xl flex items-center justify-center font-semibold leading-6 text-black w-[125px]"
+                        >
                             Thông Tin
                         </Link>
-                        <Link to="/leaderboard" className="text-xl font-semibold leading-6 text-black">
+                        <Link
+                            to="/leaderboard"
+                            className="text-xl flex items-center justify-center font-semibold leading-6 text-black w-[125px]"
+                        >
                             Xếp hạng
                         </Link>
-                        <Link to="/about" className="text-xl font-semibold leading-6 text-black">
+                        <Link
+                            to="/about"
+                            className="text-xl flex items-center justify-center font-semibold leading-6 text-black w-[125px]"
+                        >
                             Nhân sự
                         </Link>
                     </div>
