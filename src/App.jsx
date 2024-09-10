@@ -5,7 +5,7 @@ export default function App() {
     return (
         <>
             <Header />
-            <body>
+            <body className="bg-[url('../public/background.png')] bg-cover">
                 <Outlet />
             </body>
         </>
