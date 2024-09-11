@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
     return (
         <div className="w-full h-screen flex flex-col justify-between pt-20">
-            <div className="w-full flex justify-center min-h-60 pt-52">
+            <div className="w-full flex justify-center min-h-60 mx-auto">
                 <img alt="Logo" src="../fac_1.png" className="w-[600px]" />
             </div>
             <div className="w-full flex justify-center p-2">

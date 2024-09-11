@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaDiscord } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+    const [isCompact, setIsCompact] = useState(false);
+
+    useEffect(() => {
+        // Hàm xử lý thay đổi kích thước cửa sổ
+        const handleResize = () => {
+            if (window.innerWidth / window.screen.width < 0.5) {
+                setIsCompact(true);
+            } else setIsCompact(false);
+
+
+            console.log(window.innerWidth / window.screen.width);
+        };
+
+        // Thêm sự kiện resize
+        window.addEventListener('resize', handleResize);
+
+        // Xóa sự kiện resize khi component bị hủy
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <header className="fixed w-full min-h-20 max-h-20">
             <div className="container w-full min-h-20 max-h-20 flex justify-center pt-3 pb-1 mx-auto">
@@ -12,7 +32,7 @@ export default function Header() {
                             <img src="../fac_1.png" alt="" className="object-cover" />
                         </a>
                     </div>
-                    <div className="h-full mr-auto lg:flex justify-center">
+                    <div className="">
                         <Link
                             to="/home"
                             className="text-xl flex items-center justify-center font-semibold leading-6 text-black w-[125px]"
