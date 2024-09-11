@@ -5,9 +5,11 @@ export default function App() {
     return (
         <>
             <Header />
-            <body className="overflow-hidden max-h-screen">
-                <div className="bg-[url('../public/background.png')] bg-cover pt-20 h-fit">
-                    <Outlet />
+            <body className="max-h-screen">
+                <div className="bg-[url('../public/background.png')] bg-cover h-fit">
+                    <div className="container mx-auto">
+                        <Outlet />
+                    </div>
                 </div>
             </body>
         </>

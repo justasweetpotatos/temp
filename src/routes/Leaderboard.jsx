@@ -7,21 +7,23 @@ export default function Leaderboard() {
     const [isSingle, setIsSingle] = useState(false);
 
     return (
-        <div className="w-[100%] max-w-[1360px] m-auto min-w-[672px]">
-            <div className="px-32 py-20 pt-[40px]">
+        <div className="w-full h-screen flex flex-col items-center pt-20">
+            <div className="w-[70%] h-[80%] py-10 pt-[40px]">
                 {/* Individual Leaderboard */}
-                <table className="w-full bg-white border border-gray-200">
-                    <ColumnHeader></ColumnHeader>
-                    <DataTable isSingle={isSingle}></DataTable>
-                </table>
-            </div>
-            <div>
-                <button
-                    className="rounded-[15px] px-3 py-1 font-semibold border-[black] text-gray-600 bg-[#dbdbdb] block ml-auto mr-[125px] mt-[40px] mb-[0]"
-                    onClick={() => setIsSingle(!isSingle)}
-                >
-                    {isSingle ? "Bảng xếp hạng cá nhân" : "Bảng xếp hạng trường"}
-                </button>
+                <DataTable isSingle={isSingle}></DataTable>
+
+                <div className="static w-full h-10 max-h-10 flex justify-end">
+                    <button
+                        className="rounded-lg h-10 w-[300px] font-semibold"
+                        onClick={() => setIsSingle(!isSingle)}
+                    >
+                        <img
+                            src={isSingle ? "../switchToGroup.png" : "../switchToPlayer.png"}
+                            alt=""
+                            className="object-fit object-left-top"
+                        />
+                    </button>
+                </div>
             </div>
         </div>
     );

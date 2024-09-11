@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <header className="flex justify-center fixed w-full min-h-20 max-h-20">
-            <div className="container w-full pr-20 pl-20 flex justify-center pt-3">
-                <nav className="flex items-center justify-between p-2 lg:px-8 border-4 rounded-xl border-transparent bg-[#F9C791] w-full">
+        <header className="fixed w-full min-h-20 max-h-20">
+            <div className="container w-full min-h-20 max-h-20 flex justify-center pt-3 pb-1 mx-auto">
+                <nav className="flex items-center justify-between p-2 lg:px-8 border-4 rounded-xl border-transparent bg-[#F9C791] w-full drop-shadow-lg">
                     <div className="justify-start max-w-[120px]">
                         <a href="/" className="max-w-[120px]">
                             <img src="../fac_1.png" alt="" className="object-cover" />

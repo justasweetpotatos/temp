@@ -32,7 +32,7 @@ export default function About() {
                     ) : (
                         <tr>
                             <td colSpan="7" className="px-6 py-4 text-center text-sm text-gray-500">
-                                No staff available.
+                                Nhân sự đang được cập nhật.
                             </td>
                         </tr>
                     )}
