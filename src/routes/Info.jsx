@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DataNode from "../component/Info /DataNode";
+import DataNode from "../component/Info/DataNode";
 
 const data = [
     { id: "1", name: "chit Tus", time: "30/9/2969" },
