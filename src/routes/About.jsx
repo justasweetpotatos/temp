@@ -18,7 +18,7 @@ export default function About() {
     }, []);
 
     return (
-        <div className="bg-white px-32 py-20">
+        <div className="px-32 py-20">
             <div className="bg-gray-800">
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 p-10 items-center place-content-center">
                     {listStaff && listStaff.length > 0 ? (
