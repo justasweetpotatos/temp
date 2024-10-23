@@ -55,6 +55,13 @@ export default function Header() {
                                 <span className="w-0 min-h-[2px] bg-black group-hover:min-w-full transition duration-300 mt-[2px] rounded-xl"></span>
                             </Link>
                             <Link
+                                to="/tournament"
+                                className="group text-lg flex flex-col items-center justify-center font-semibold leading-6 text-black w-max px-[10px]"
+                            >
+                                <div className="w-full mt-[5px]">Tounament</div>
+                                <span className="w-0 min-h-[2px] bg-black group-hover:min-w-full transition duration-300 mt-[2px] rounded-xl"></span>
+                            </Link>
+                            <Link
                                 to="/leaderboard"
                                 className="group text-lg flex flex-col items-center justify-center font-semibold leading-6 text-black w-max px-[10px]"
                             >
@@ -68,6 +75,7 @@ export default function Header() {
                                 <div className="w-full mt-[5px]">Nhân sự</div>
                                 <span className="w-0 min-h-[2px] bg-black group-hover:min-w-full transition duration-300 mt-[2px] rounded-xl"></span>
                             </Link>
+
                         </div>
                     )}
 

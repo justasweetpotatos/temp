@@ -7,8 +7,8 @@ export default function Leaderboard() {
     const [isSingle, setIsSingle] = useState(false);
 
     return (
-        <div className="w-full h-screen flex flex-col items-center pt-20">
-            <div className="w-[70%] h-[80%] py-10 pt-[40px]">
+        <div className="w-full h-full flex flex-col items-center">
+            <div className="w-[90%] h-[80%]">
                 {/* Individual Leaderboard */}
                 <DataTable isSingle={isSingle}></DataTable>
 

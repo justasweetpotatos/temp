@@ -27,7 +27,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="w-full h-screen items-center place-content-center pt-20">
+        <div className="w-full h-full items-center place-content-center">
             <div className="bg-[#1c1b1a] w-full h-3/5 top-0 mx-auto mt-[max(-10%,-100px)] border-2 rounded-xl border-transparent">
                 <div className="flex items-center justify-center mt-[0px] top-[40px] py-10 pr-12 pl-12">
                     <ol className="flex w-[90%] justify-between relative after:content-[''] h-[3px] bg-[#81ecec] top-2/4 left-[0] translate-x-[0] -translate-y-1/2">
