@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import View from "../component/BanPick/View";
 
 const initialSession = {
   id: 1,
@@ -14,8 +14,13 @@ export default function BanPick() {
   const [currentSession, setCurrentSession] = useState(initialSession);
 
   return (
-    <div className="h-full w-full px-10 overflow-scroll overflow-x-hidden">
-      <Outlet context={{ currentSession,setCurrentSession, selectedList, setSelectedList }} />
+    <div className="h-full w-full px-10 overflow-x-hidden">
+      <View
+        currentSession={currentSession}
+        setCurrentSession={setCurrentSession}
+        selectedList={selectedList}
+        setSelectedList={setSelectedList}
+      />
     </div>
   );
 }
